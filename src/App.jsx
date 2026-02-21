@@ -227,7 +227,7 @@ function Login({ users, onLogin }) {
             Sign In
           </button>
         </form>
-        <p style={{ textAlign: "center", color: "#2d3748", fontSize: "12px", marginTop: "24px" }}>If fogotten your credentials <a href="https://wa.me/654840542">contact admin</a> </p>
+        <p style={{ textAlign: "center", color: "#2d3748", fontSize: "12px", marginTop: "24px" }}>If fogotten your credentials <button onClick={"https://wa.me/654840542"} style={{ background: "none", border: "none", color: "#b49650", cursor: "pointer", fontFamily: "Georgia,serif", fontSize: "12px" }}>contact admin</button> </p>
       </div>
     </div>
   );
