@@ -269,7 +269,7 @@ function AdminDashboard({ users, sessions, onAddUser, onDeleteUser, onAddSession
         <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", padding: "16px 0", marginRight: "16px" }}>
             <span style={{ fontSize: "20px" }}>⚖</span>
-            <span style={{ color: "#d4b87a", letterSpacing: "3px", fontSize: "14px", textTransform: "uppercase" }}>VoxEnterprise</span>
+            <span style={{ color: "#d4b87a", letterSpacing: "3px", fontSize: "14px", textTransform: "uppercase" }}>AXION ENTERPRISE</span>
           </div>
           {tabs.map(t => (
             <button key={t.id} onClick={() => { setTab(t.id); setSubView(null); }}
@@ -664,7 +664,7 @@ function VoterDashboard({ user, sessions, onCastVote, onRefresh, onLogout, tick 
       <div style={{ borderBottom: "1px solid rgba(180,150,80,0.15)", background: "rgba(0,0,0,0.4)", backdropFilter: "blur(10px)", padding: "16px 32px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <span style={{ fontSize: "20px" }}>⚖</span>
-          <span style={{ color: "#d4b87a", letterSpacing: "3px", fontSize: "14px", textTransform: "uppercase" }}>VoxEnterprise</span>
+          <span style={{ color: "#d4b87a", letterSpacing: "3px", fontSize: "14px", textTransform: "uppercase" }}>AXION ENTERPRISE</span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           <span style={{ color: "#b49650", fontSize: "13px" }}>👤 {user.name}</span>
