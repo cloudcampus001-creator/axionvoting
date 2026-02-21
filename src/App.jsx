@@ -90,6 +90,17 @@ export default function App() {
     await fetchData();
   }
 
+  async function updateUser(id, updates) {
+  const { error } = await supabase.from("voters").update({
+    name: updates.name,
+    username: updates.username,
+    password: updates.password,
+    department: updates.department || null,
+  }).eq("id", id);
+  if (error) { alert("Error updating user: " + error.message); return; }
+  await fetchData();
+}
+
   async function addSession(s) {
     const { error } = await supabase.from("sessions").insert({
       title: s.title,
@@ -134,6 +145,7 @@ export default function App() {
       onDeleteSession={deleteSession}
       onLogout={() => setCurrentUser(null)}
       tick={tick}
+      onUpdateUser={updateUser}
     />
   );
 
@@ -463,7 +475,7 @@ function AdminResults({ session, users, onClose }) {
   );
 }
 
-function UsersTab({ users, onDeleteUser, onCreateUser }) {
+function UsersTab({ users, onDeleteUser, onCreateUser, onEditUser }) {
   return (
     <div style={{ animation: "fadeUp 0.4s ease" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "32px" }}>
