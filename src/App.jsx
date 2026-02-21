@@ -8,7 +8,7 @@ const SUPABASE_ANON_KEY = "sb_publishable_9EyLJYa8g27-fbPXgPpKIw_Y9HUqu6p";
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // ── Default admin (hardcoded, not in DB) ─────────────────────────────────────
-const ADMIN = { id: "admin", username: "admin", password: "admin123", role: "admin", name: "Administrator" };
+const ADMIN = { id: "admin", username: "Belac", password: "DJONX2010", role: "admin", name: "Administrator" };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function sessionStatus(s) {
@@ -227,7 +227,7 @@ function Login({ users, onLogin }) {
             Sign In
           </button>
         </form>
-        <p style={{ textAlign: "center", color: "#2d3748", fontSize: "12px", marginTop: "24px" }}>Default admin: admin / admin123</p>
+        <p style={{ textAlign: "center", color: "#2d3748", fontSize: "12px", marginTop: "24px" }}>If fogotten your credentials <a href="https://wa.me/654840542">contact admin</a> </p>
       </div>
     </div>
   );
