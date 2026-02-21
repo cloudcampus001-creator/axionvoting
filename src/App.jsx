@@ -208,7 +208,7 @@ function Login({ users, onLogin }) {
           <div style={{ width: "64px", height: "64px", borderRadius: "50%", background: "linear-gradient(135deg, #b49650, #d4b87a)", margin: "0 auto 20px", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 0 40px rgba(180,150,80,0.3)" }}>
             <span style={{ fontSize: "28px" }}>⚖</span>
           </div>
-          <h1 style={{ color: "#d4b87a", fontSize: "28px", fontWeight: "normal", letterSpacing: "3px", margin: 0, textTransform: "uppercase" }}>VoxEnterprise</h1>
+          <h1 style={{ color: "#d4b87a", fontSize: "28px", fontWeight: "normal", letterSpacing: "3px", margin: 0, textTransform: "uppercase" }}>AXION ENTERPRISE</h1>
           <p style={{ color: "#4a5568", fontSize: "13px", letterSpacing: "2px", marginTop: "8px" }}>SECURE VOTING PLATFORM</p>
         </div>
         <form onSubmit={handleLogin} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(180,150,80,0.2)", borderRadius: "12px", padding: "36px", backdropFilter: "blur(10px)" }}>
